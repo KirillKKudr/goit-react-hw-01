@@ -3,23 +3,23 @@ import PropTypes from 'prop-types';
 
 export default function Profile({ name, tag, location, image, stats }) {
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.card}>
                 <img src={image} alt="User avatar" />
-                <p>{name}</p>
+                <h1>{name}</h1>
                 <p>@{tag}</p>
                 <p>{location}</p>
             </div>
             <ul className={styles.soc_list}>
-                <li>
+                <li className={styles.list_item}>
                     <span>Followers</span>
                     <span>{stats.followers}</span>
                 </li>
-                <li>
+                <li className={styles.list_item}>
                     <span>Views</span>
                     <span>{stats.views}</span>
                 </li>
-                <li>
+                <li className={styles.list_item}>
                     <span>Likes</span>
                     <span>{stats.likes}</span>
                 </li>
