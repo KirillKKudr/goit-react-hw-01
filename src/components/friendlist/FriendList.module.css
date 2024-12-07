@@ -1,0 +1,18 @@
+.online {
+    color: green;
+}
+
+.offline {
+    color: red;
+}
+
+.list{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_item{
+    list-style: none;
+}
