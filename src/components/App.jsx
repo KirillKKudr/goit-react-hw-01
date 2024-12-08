@@ -1,7 +1,9 @@
-import Profile from "./profile/Profile";;
-import FriendList from "./friendlist/FriendList"
+import TransactionHistory from './TransactionHistory/TransactionHistory'
+import Profile from "./profile/Profile";
+import FriendList from "./friendlist/FriendList";
 import userData from '../userData.json';
 import friends from '../friends.json';
+import transactions from '../transaction.json'
 
 
 export const App = () => {
@@ -19,7 +21,8 @@ export const App = () => {
 
        
           <FriendList friends={friends} />
-    
+          
+          <TransactionHistory items={transactions} />
         
         </>
 
