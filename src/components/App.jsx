@@ -1,4 +1,4 @@
-import Profile from "./Profile/Profile";
+import Profile from "./profile/Profile";;
 import FriendList from "./friendlist/FriendList"
 import userData from '../userData.json';
 import friends from '../friends.json';
